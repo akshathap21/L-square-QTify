@@ -4,3 +4,9 @@
     width: 67px;
     height: 34px;
 }
+
+.logo-container {
+    display: flex;
+    align-items: center; /* Center vertically */
+    margin-right: 16px; /* Add space to the right (adjust as needed) */
+  }
