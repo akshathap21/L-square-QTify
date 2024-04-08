@@ -3,7 +3,7 @@ import styles from "./Logo.module.css"
 import LogoImage from "../assets/logo.png"
 const Logo =()=>{
     return(
-        <div className="logo-container"><img className={styles.logoimg} src={LogoImage} alt="qtify-logo" /></div>
+        <div className="logo-container"><img className={styles.logoimg} src={LogoImage} alt="logo" width="100vw" height="50vh" /></div>
     )
 }
 

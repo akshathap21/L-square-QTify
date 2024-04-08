@@ -1,12 +1,13 @@
-.logoimg{
+/* .logoimg{
     padding: 20px 32px;
     margin-left: 16px;
     width: 67px;
     height: 34px;
-}
+} */
 
 .logo-container {
     display: flex;
     align-items: center; /* Center vertically */
-    margin-right: 16px; /* Add space to the right (adjust as needed) */
+    margin-left: 16px; /* Add space to the right (adjust as needed) */
+   
   }
