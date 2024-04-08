@@ -9,5 +9,6 @@
     display: flex;
     align-items: center; /* Center vertically */
     margin-left: 16px; /* Add space to the right (adjust as needed) */
+    background-color: black;
    
   }

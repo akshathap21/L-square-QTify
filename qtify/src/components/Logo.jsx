@@ -2,7 +2,8 @@ import  "./Logo.module.css"
 import LogoImage from "../assets/logo.png"
 const Logo =()=>{
     return(
-        <div className="logo-container"><img  src={LogoImage} alt="logo" width="100vw" height="50vh" /></div>
+        <div style={{ marginLeft: "32px",display :"flex",
+            alignItems: "center",}}  ><img  src={LogoImage} alt="logo"  width={67} height={34} /></div>
     )
 }
 
