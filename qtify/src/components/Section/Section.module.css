@@ -1,0 +1,25 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+}
+
+.wrapper{
+    display: flex;
+ 
+   flex-wrap: wrap;
+
+}
+
+.cardStyle{
+    margin: 25px;
+}
+
+.sectionContainer{
+    margin: 20px;
+}
+
+.toggleText{
+    color: #34C94B;
+    cursor: pointer;
+}
