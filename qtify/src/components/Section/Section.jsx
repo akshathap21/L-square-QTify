@@ -6,7 +6,7 @@ import Carousel from "../Carousel/Carousel";
 
 export default function Section({title, data, type, filterSources}){
 
-    const [caroselToggle, setCarouselToggle] = useState(true);
+    const [caroselToggle, setCarouselToggle] = useState(false);
     const handleToggle=()=>{
       setCarouselToggle((prevState) => !prevState)
     }
