@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-const Carousel = ({data }) => {
+const Carousel = ({data, type }) => {
   var settings = {
     dots: true,
     infinite: true,
@@ -18,7 +18,7 @@ const Carousel = ({data }) => {
    <>
     <Slider {...settings}>
   {data.map((ele)=>(
-    <Card data={ele}/>
+    <Card data={ele} type={type}/>
   ))}
    </Slider>
    </>

@@ -6,8 +6,8 @@
 
 .wrapper{
     display: flex;
- 
-   flex-wrap: wrap;
+ overflow: hidden;
+  
 
 }
 
@@ -16,10 +16,16 @@
 }
 
 .sectionContainer{
-    margin: 20px;
+    margin: 30px;
+
+
 }
 
 .toggleText{
     color: #34C94B;
     cursor: pointer;
+}
+
+.songsTab{
+color: #FFFFFF;
 }

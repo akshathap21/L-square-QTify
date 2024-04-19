@@ -4,7 +4,7 @@ import HeroSection from './components/HeroSection/HeroSection';
 import Card from './components/Card/Card'
 import {Outlet} from 'react-router-dom'
 import { useEffect, useState } from 'react';
-import { fetchTopAlbums , fetchNewAlbums} from './api/Api';
+import { fetchTopAlbums , fetchNewAlbums, fetchSongs} from './api/Api';
 import HomePage from './components/HomePage/HomePage';
 
 function App() {
@@ -21,16 +21,18 @@ function App() {
 
   useEffect(()=>{
     generateData("topAlbums", fetchTopAlbums);
-    generateData("newAlbums", fetchNewAlbums)
+    generateData("newAlbums", fetchNewAlbums);
+    generateData("songs", fetchSongs);
+    
     
   },[]);
 
-  const {topAlbums=[], newAlbums=[]}= data;
+  const {topAlbums=[], newAlbums=[], songs=[]}= data;
   return (
     <div className="App">
       <NavigationBar />
     
-      <Outlet context={{data: {topAlbums, newAlbums}}}/>
+      <Outlet context={{data: {topAlbums, newAlbums, songs}}}/>
      
     </div>
   );
